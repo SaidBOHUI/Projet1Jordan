@@ -1,0 +1,16 @@
+                  <% if (article.author) { %>
+                    <th>Auteur</th>
+                  <% } %>
+                  <% if (article.author) { %>
+                    <td><a href="/article/<%=article.id%>">Afficher les details</a></td>
+                  <% } %>
+
+
+
+                  <th scope="row"><%= article.id %></th>
+
+                  <% if (!article.author) { %>
+                    <td>Auteur inconnu</td>
+                <% }else{ %>
+                    <td><%= article.author %></td>
+                <% } %>
